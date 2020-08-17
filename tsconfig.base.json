@@ -12,6 +12,15 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
+    "paths": {
+      "@env": ["src/environment/environment"],
+      "@mocks/*": ["src/app/mocks/*"],
+      "@layouts/*": ["src/app/layouts/*"],
+      "@pages/*": ["src/app/pages/*"],
+      "@shared/*": ["src/app/shared/*"],
+      "@core/*": ["src/app/core/*"],
+      "@app/*": ["src/app/*"],
+    },
     "lib": [
       "es2018",
       "dom"

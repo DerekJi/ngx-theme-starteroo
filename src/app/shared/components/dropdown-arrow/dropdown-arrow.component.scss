@@ -1,0 +1,20 @@
+.dropdown-arrow {
+  top: 0;
+  overflow: hidden;
+  height: 1.25rem;
+  width: 1.25rem;
+  z-index: 1001;
+  transform: translate3d(0,-100%,0);
+
+  &:before {
+    display: block;
+    position: absolute;
+    left: .5rem;
+    pointer-events: none;
+  }
+}
+
+.dropdown-menu-right>.dropdown-arrow {
+  left: auto;
+  right: .5rem;
+}
