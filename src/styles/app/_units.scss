@@ -1,0 +1,53 @@
+@import './_variables';
+@import './_functions';
+
+$u4: $app-u4;
+$u5: $app-u5;
+
+@function u5-times($times) {
+  @return app-times($u5, #{$times});
+}
+@function u4-times($times) {
+  @return app-times($u4, #{$times});
+}
+
+$u5-2: u5-times(2);
+$u5-3: u5-times(3);
+$u5-4: u5-times(4);
+$u5-5: u5-times(5);
+$u5-6: u5-times(6);
+$u5-7: u5-times(7);
+$u5-8: u5-times(8);
+$u5-9: u5-times(9);
+$u5-10: u5-times(10);
+$u5-12: u5-times(12);
+$u5-15: u5-times(15);
+$u5-20: u5-times(20);
+$u5-25: u5-times(25);
+$u5-30: u5-times(30);
+$u5-35: u5-times(35);
+$u5-40: u5-times(40);
+$u5-45: u5-times(45);
+$u5-50: u5-times(50);
+$u5-60: u5-times(60);
+
+
+$u4-2: u4-times(2);
+$u4-3: u4-times(3);
+$u4-4: u4-times(4);
+$u4-5: u4-times(5);
+$u4-6: u4-times(6);
+$u4-7: u4-times(7);
+$u4-8: u4-times(8);
+$u4-9: u4-times(9);
+$u4-10: u4-times(10);
+$u4-12: u4-times(12);
+$u4-15: u4-times(15);
+$u4-20: u4-times(20);
+$u4-25: u4-times(25);
+$u4-30: u4-times(30);
+$u4-35: u4-times(35);
+$u4-40: u4-times(40);
+$u4-45: u4-times(45);
+$u4-50: u4-times(50);
+$u4-60: u4-times(60);

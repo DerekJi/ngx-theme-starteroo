@@ -1,0 +1,50 @@
+@import './_media';
+
+/**
+ * Set the Footer sticky to the bottom
+ *  1. keep the bottom if the content is too short
+ *  2. scroll together with the main contents if the content is long
+ */
+$footer-height: 200px;
+$footer-height-mobile: 315px;
+
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -$footer-height;
+  @include xsmall-screen {
+    margin-bottom: -$footer-height-mobile;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+  }
+}
+
+footer, .page-wrap:after {
+  height: $footer-height;
+  @include xsmall-screen {
+    height: $footer-height-mobile;
+  }
+}
+
+.light-theme {
+  background-color: #fff;
+}
+
+.light-theme .navbar-social .nav-link  {
+  color: var(--blue);
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.cursor-pointer, a {
+  cursor: pointer;
+}

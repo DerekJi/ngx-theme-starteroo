@@ -1,0 +1,3 @@
+@function app-times($base, $times) {
+  @return calc(#{$times} * #{$base});
+}
