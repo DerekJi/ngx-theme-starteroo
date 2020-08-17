@@ -1,0 +1,18 @@
+@import 'app/common';
+
+header {
+  height: $header-height;
+}
+
+.brand {
+  width: 15rem;
+}
+
+.search-bar {
+  flex: 1;
+  background-color: yellow;
+}
+
+.top-right {
+
+}
