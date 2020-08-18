@@ -1,21 +1,5 @@
-.input-group {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  width: 100%;
-}
-.input-group:not(.input-group-alt) .input-group-prepend .input-group-text {
-  padding-right: 1px;
-}
-.focus .input-group-prepend {
-  background-color: #fff;
-  & .oi-magnifying-glass:before {
-    color: #363642;
-  }
-
-}
-.input-group:not(.input-group-alt) .form-control, .input-group:not(.input-group-alt) .input-group-text {
+.input-group:not(.input-group-alt) .form-control,
+.input-group:not(.input-group-alt) .input-group-text {
   border: 0;
   background-color: transparent;
   box-shadow: none;
@@ -23,64 +7,27 @@
     background-color: #fff;
   }
 }
-.input-group-text {
-  color: hsla(0,0%,100%,.6);
-}
-.input-group-text>.oi {
-  top: 0;
-}
-.input-group {
-  border-color: transparent;
-}
-.input-group-search {
-  background-color: hsla(0,0%,100%,.12);
-}
-.oi {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  speak: none;
-  font-family: Icons;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-.oi:empty:before {
-  width: 1em;
-  text-align: center;
-  box-sizing: content-box;
-}
-.oi-magnifying-glass:before {
-  content: '\f002';
-  font-weight: 900;
-  font-family: "Font Awesome 5 Free";
-}
-.input-group-search:not(.focus) .form-control,
-.input-group-search:not(.focus) .form-control::placeholder,
-.input-group-search:not(.focus) .input-group-text {
-  color: hsla(0,0%,100%,.6);
-}
-.input-group-search, .input-group-search.focus {
-  box-shadow: none;
-  &:focus {
-    outline-color: #346cb0;
-  }
-  &:focus {
-    outline: -webkit-focus-ring-color auto 1px;
-    outline-color: -webkit-focus-ring-color;
-    outline-style: auto;
-    outline-width: 1px;
+.header-search-container {
+  background-color: hsla(0, 0%, 100%, .12);
+
+  &:not(.focus) .form-control,
+  &:not(.focus) .form-control::placeholder,
+  &:not(.focus) .input-group-text {
+    color: hsla(0, 0%, 100%, .6);
   }
 
+  .oi:before {
+    content: '\f002';
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+  }
 }
 
-.form-control:focus {
-  color: #363642;
-  background-color: #fff;
-  border-color: #346cb0;
-  outline: 0;
-  box-shadow: 0 0 0 1px #346cb0;
+.focus .input-group-prepend {
+  background-color: #e3e3e3;
+  & .oi:before {
+    color: #363642;
+    background-color: #e3e3e3;
+  }
 }

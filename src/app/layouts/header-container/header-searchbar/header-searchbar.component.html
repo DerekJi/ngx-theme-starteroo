@@ -1,7 +1,9 @@
-<div class="input-group input-group-search dropdown w-100 rounded" [ngClass]="{ focus: focused}">
-  <div class="input-group-prepend rounded-left">
-    <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
+<div class="m-4">
+  <div class="input-group header-search-container rounded" [ngClass]="{ focus: focused}">
+    <div class="input-group-prepend rounded-left">
+      <span class="input-group-text"><span class="oi"></span></span>
+    </div>
+    <input type="text" class="form-control" aria-label="Search" placeholder="Search"
+        (focus)="focused = true" (blur)="focused = false">
   </div>
-  <input type="text" class="form-control" aria-label="Search" placeholder="Search"
-      (focus)="focused = true" (blur)="focused = false">
 </div>
