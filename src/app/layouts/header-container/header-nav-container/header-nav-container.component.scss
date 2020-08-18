@@ -8,3 +8,23 @@ li {
     height: 36px;
   }
 }
+
+.nav-item.has-notified, .nav-link.has-notified {
+  position: relative;
+}
+.nav-item.has-notified:before, .nav-link.has-notified:before {
+  position: absolute;
+  top: .5rem;
+  right: .75rem;
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #f7c46c;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
