@@ -1,0 +1,12 @@
+<div class="dropdown-sheets">
+  <ng-container *ngFor="let item of sheets">
+    <div class="dropdown-sheet-item">
+      <a href="#" class="tile-wrapper">
+        <span class="tile tile-lg {{ item.tileBackground }}">
+          <i class="{{ item.tileIcon }}"></i>
+        </span>
+        <span class="tile-peek">{{ item.sheetName }}</span>
+      </a>
+    </div>
+  </ng-container>
+</div><!-- .dropdown-sheets -->

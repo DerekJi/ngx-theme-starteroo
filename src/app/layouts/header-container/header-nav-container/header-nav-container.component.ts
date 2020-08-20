@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UiConfigService } from '@core/services/ui-config.service';
 
 @Component({
   selector: 'app-header-nav-container',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderNavContainerComponent implements OnInit {
 
-  constructor() { }
+  readonly sheets = this.uiConfigs.getSheets();
+
+  constructor(
+    private uiConfigs: UiConfigService,
+  ) { }
 
   ngOnInit(): void {
   }

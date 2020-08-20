@@ -28,3 +28,26 @@ li {
   -ms-user-select: none;
   user-select: none;
 }
+
+
+.dropdown-menu {
+  margin-top: 10px;
+  border: 0;
+  font-weight: 400;
+  box-shadow: 0 0 0 1px rgba(20,20,31,.05), 0 2px 7px 1px rgba(20,20,31,.16);
+
+  &.dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+
+  // &.show {
+  //   -webkit-animation-name: showDropdown;
+  //   animation-name: showDropdown;
+  // }
+}
+
+.dropdown-menu-rich {
+  padding: 0;
+  width: 20rem;
+}
