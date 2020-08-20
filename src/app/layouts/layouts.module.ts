@@ -8,6 +8,7 @@ import { HeaderBrandComponent } from './header-container/header-brand/header-bra
 import { HeaderSearchbarComponent } from './header-container/header-searchbar/header-searchbar.component';
 import { HeaderProfileComponent } from './header-container/header-profile/header-profile.component';
 import { HeaderNavContainerComponent } from './header-container/header-nav-container/header-nav-container.component';
+import { DropdownContainerComponent } from './header-container/shared/dropdown-container/dropdown-container.component';
 import { DropdownSheetsComponent } from './header-container/shared/dropdown-sheets/dropdown-sheets.component';
 
 
@@ -18,6 +19,8 @@ import { DropdownSheetsComponent } from './header-container/shared/dropdown-shee
     HeaderSearchbarComponent,
     HeaderProfileComponent,
     HeaderNavContainerComponent,
+
+    DropdownContainerComponent,
     DropdownSheetsComponent,
   ],
   exports: [

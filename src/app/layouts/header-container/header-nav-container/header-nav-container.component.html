@@ -15,11 +15,9 @@
         data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         <span class="fas fa-th"></span>
       </a>
-
-      <div class="dropdown-menu dropdown-menu-rich dropdown-menu-right">
-        <app-dropdown-arrow position="right"></app-dropdown-arrow>
+      <app-dropdown-container>
         <app-dropdown-sheets [sheets]="sheets"></app-dropdown-sheets>
-      </div>
+      </app-dropdown-container>
     </li>
   </ul>
 </div>
