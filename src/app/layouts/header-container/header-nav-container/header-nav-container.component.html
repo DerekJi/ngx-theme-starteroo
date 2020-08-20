@@ -1,14 +1,22 @@
 <div class="header-nav-container">
   <ul class="header-nav nav ">
     <li class="nav-item dropdown header-nav-dropdown has-notified show">
-      <a class="nav-link text-light lighter-hover-bg rounded" href="#" title="Activities">
+      <a class="nav-link text-light lighter-hover-bg rounded" href="#" title="Activities"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         <span class="fas fa-signature"></span>
       </a>
+      <app-dropdown-container>
+        <app-dropdown-list header="Activities"></app-dropdown-list>
+       </app-dropdown-container>
     </li>
     <li class="nav-item dropdown header-nav-dropdown has-notified show">
-      <a class="nav-link text-light lighter-hover-bg rounded" href="#" title="Emails">
+      <a class="nav-link text-light lighter-hover-bg rounded" href="#" title="Emails"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         <span class="far fa-envelope-open"></span>
       </a>
+      <app-dropdown-container>
+        <app-dropdown-list header="Messages"></app-dropdown-list>
+      </app-dropdown-container>
     </li>
     <li class="nav-item dropdown header-nav-dropdown show">
       <a class="nav-link text-light lighter-hover-bg rounded" href="#" title="Modules"

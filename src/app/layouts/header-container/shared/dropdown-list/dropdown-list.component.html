@@ -1,0 +1,26 @@
+<div class="ddl">
+  <div class="ddl-header stop-propagation d-flex justify-content-between">
+    <span>
+      {{ header }} <i>({{ items.length }})</i>
+    </span>
+  </div>
+
+  <div class="ddl-body">
+    <ng-container *ngFor="let item of items">
+      <div>
+        <img src="https://uselooper.com/assets/images/avatars/uifaces15.jpg" width="2rem" />
+      </div>
+      <div>
+        <div>{{ item.kicker }}</div>
+        <div>{{ item.title }}</div>
+        <div>{{ item.subTitle }}</div>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="ddl-footer text-center">
+    <a href="#">Show all {{ header }}
+      <i class="fas fa-fw fa-long-arrow-alt-right"></i>
+    </a>
+  </div>
+</div>
