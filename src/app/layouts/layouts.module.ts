@@ -12,7 +12,8 @@ import { DropdownContainerComponent } from './header-container/shared/dropdown-c
 import { DropdownListComponent } from './header-container/shared/dropdown-list/dropdown-list.component';
 import { DropdownSheetsComponent } from './header-container/shared/dropdown-sheets/dropdown-sheets.component';
 import { DropdownMenuComponent } from './header-container/shared/dropdown-menu/dropdown-menu.component';
-
+import { SidebarModule } from './sidebar/sidebar.module';
+import { TreeMenuModule } from './tree-menu/tree-menu.module';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,9 @@ import { DropdownMenuComponent } from './header-container/shared/dropdown-menu/d
   imports: [
     CommonModule,
     SharedModule,
+
+    SidebarModule,
+    TreeMenuModule,
   ]
 })
 export class LayoutsModule { }

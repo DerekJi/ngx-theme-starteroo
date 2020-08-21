@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidebarService } from '@core/services/sidebar.service';
 
 @Component({
   selector: 'app-header-brand',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderBrandComponent implements OnInit {
 
-  constructor() { }
+  toggleSidebar() {
+    this.sidebarService.toggleActive();
+  }
+
+  constructor(
+    private sidebarService: SidebarService,
+  ) { }
 
   ngOnInit() {
   }
