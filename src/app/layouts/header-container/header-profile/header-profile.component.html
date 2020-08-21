@@ -1,11 +1,18 @@
-<button class="profile-container d-flex border-0 h-100 align-items-center" type="button"
-  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
+<div class="profile-container text-center h-100 w-100">
+  <button class="d-flex border-0 h-100 align-items-center" type="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
   >
-  <span class="user-avatar user-avatar-md">
-    <img src="assets/images/avatars/sample-profile.png" alt="">
-  </span>
-  <span class="profile-summary d-flex flex-column text-left">
-    <span class="account-name"><b>Derek Ji</b></span>
-    <span class="account-description text-sm">Full Stack Developer</span>
-  </span>
-</button>
+    <span class="user-avatar user-avatar-md">
+      <img src="assets/images/avatars/sample-profile.png" alt="">
+    </span>
+    <span class="profile-summary d-flex flex-column text-left">
+      <span class="account-name"><b>Derek Ji</b></span>
+      <span class="account-description text-sm">Full Stack Developer</span>
+    </span>
+  </button>
+
+<app-dropdown-container arrowPosition='left' width="15">
+  <app-dropdown-menu></app-dropdown-menu>
+</app-dropdown-container>
+
+</div>

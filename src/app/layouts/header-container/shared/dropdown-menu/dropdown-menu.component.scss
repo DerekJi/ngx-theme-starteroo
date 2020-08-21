@@ -1,0 +1,21 @@
+@import 'app/_variables';
+
+.menu-item {
+  height: 2.5rem;
+  padding: .5rem;
+
+  i {
+    padding-right: .5rem;
+  }
+  &:hover {
+    background-color: $app-primary;
+    color: #fff;
+  }
+}
+
+.menu-divider {
+  height: 0;
+  margin: .5rem 0;
+  overflow: hidden;
+  border-top: 1px solid #e6e8ed;
+}

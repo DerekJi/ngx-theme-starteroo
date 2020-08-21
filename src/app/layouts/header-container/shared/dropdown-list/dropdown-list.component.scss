@@ -1,0 +1,85 @@
+@import 'app/_variables';
+@import 'app/thin-scrollbar';
+
+$border: 1px solid rgba(34,34,48,.1);
+
+.ddl {
+  max-height: 20rem;
+
+  .ddl-header {
+    height: 2.5rem;
+    padding: .5rem;
+    color: var(--secondary);
+    background-color: var(--light);
+    border-bottom: $border;
+  }
+
+  .ddl-body {
+    overflow: auto;
+    height: 17.5rem;
+
+    .d-list-item {
+      min-height: 4.5rem;
+      padding: .75rem;
+      &:not(:last-child) {
+        border-bottom: $border;
+      }
+
+      &:hover {
+        background-color: $app-bg-primary;
+        .content *  {
+          color: #fff;
+        }
+      }
+    }
+
+    .user-avartar {
+      margin: 0 .5rem;
+      img {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+      }
+    }
+
+    .content {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+      .kicker, .sub-title {
+        font-size: .8rem;
+        color: #363642;
+      }
+      .title {
+        font-size: .85rem;
+        color: #222230;
+      }
+      .date {
+        font-size: .75rem;
+        color: #888c9b;
+      }
+      &.unread {
+        .kicker, .sub-title, .title {
+          font-weight: bold;
+        }
+      }
+    }
+
+    // .unread {
+    //   .kicker, .sub-title, title {
+    //     font-weight: bold;
+    //     color: red;
+    //   }
+    // }
+  }
+
+  .ddl-footer {
+    height: 3rem;
+    color: $app-primary;
+    background-color: var(--light);
+    border-top: $border;
+    padding: .8rem;
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+}
+

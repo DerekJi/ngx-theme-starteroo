@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { IDropdownListItem } from '@core/models/dropdown-list-item.interface';
+import { UiConfigService } from '@core/services/ui-config.service';
 
 @Component({
   selector: 'app-dropdown-list',
@@ -10,16 +11,11 @@ import { IDropdownListItem } from '@core/models/dropdown-list-item.interface';
 export class DropdownListComponent implements OnInit {
 
   @Input() header: string = 'Activities';
-  @Input() items: IDropdownListItem[] = [
-    {
-      title: ' Jeffrey Wells created a schedule ',
-    },
-    {
-      title: ' Anna Vargas logged a chat ',
-    }
-  ];
+  @Input() items: IDropdownListItem[] = this.uiConfigs.getActivities();
 
-  constructor() { }
+  constructor(
+    private uiConfigs: UiConfigService,
+  ) { }
 
   ngOnInit() {
   }

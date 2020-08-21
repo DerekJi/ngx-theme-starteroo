@@ -6,7 +6,7 @@
         <span class="fas fa-signature"></span>
       </a>
       <app-dropdown-container>
-        <app-dropdown-list header="Activities"></app-dropdown-list>
+        <app-dropdown-list header="Activities" [items]="activities"></app-dropdown-list>
        </app-dropdown-container>
     </li>
     <li class="nav-item dropdown header-nav-dropdown has-notified show">
@@ -15,7 +15,7 @@
         <span class="far fa-envelope-open"></span>
       </a>
       <app-dropdown-container>
-        <app-dropdown-list header="Messages"></app-dropdown-list>
+        <app-dropdown-list header="Messages" [items]="messages"></app-dropdown-list>
       </app-dropdown-container>
     </li>
     <li class="nav-item dropdown header-nav-dropdown show">

@@ -11,6 +11,7 @@ import { HeaderNavContainerComponent } from './header-container/header-nav-conta
 import { DropdownContainerComponent } from './header-container/shared/dropdown-container/dropdown-container.component';
 import { DropdownListComponent } from './header-container/shared/dropdown-list/dropdown-list.component';
 import { DropdownSheetsComponent } from './header-container/shared/dropdown-sheets/dropdown-sheets.component';
+import { DropdownMenuComponent } from './header-container/shared/dropdown-menu/dropdown-menu.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { DropdownSheetsComponent } from './header-container/shared/dropdown-shee
     DropdownContainerComponent,
     DropdownListComponent,
     DropdownSheetsComponent,
+    DropdownMenuComponent,
   ],
   exports: [
     HeaderContainerComponent,

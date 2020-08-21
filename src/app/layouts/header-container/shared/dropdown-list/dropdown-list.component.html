@@ -1,26 +1,30 @@
 <div class="ddl">
   <div class="ddl-header stop-propagation d-flex justify-content-between">
     <span>
-      {{ header }} <i>({{ items.length }})</i>
+      <b class="mr-1">{{ header }}</b>
+      <i>({{ items.length }})</i>
     </span>
   </div>
 
   <div class="ddl-body">
     <ng-container *ngFor="let item of items">
-      <div>
-        <img src="https://uselooper.com/assets/images/avatars/uifaces15.jpg" width="2rem" />
-      </div>
-      <div>
-        <div>{{ item.kicker }}</div>
-        <div>{{ item.title }}</div>
-        <div>{{ item.subTitle }}</div>
+      <div class="d-list-item d-flex p-2 align-items-center cursor-pointer">
+        <div class="user-avartar">
+          <img [src]="item.img" width="24" />
+        </div>
+        <div class="content" [ngClass]="{'unread': item.unread}">
+          <div class="kicker" *ngIf="item.kicker">{{ item.kicker }}</div>
+          <div class="title" *ngIf="item.title">{{ item.title }}</div>
+          <div class="sub-title" *ngIf="item.subTitle">{{ item.subTitle }}</div>
+          <div class="date" *ngIf="item.when">{{ item.when }}</div>
+        </div>
       </div>
     </ng-container>
   </div>
 
   <div class="ddl-footer text-center">
     <a href="#">Show all {{ header }}
-      <i class="fas fa-fw fa-long-arrow-alt-right"></i>
+      <i class="fas fa-fw fa-external-link-alt"></i>
     </a>
   </div>
 </div>

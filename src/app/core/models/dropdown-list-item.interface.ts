@@ -6,4 +6,5 @@ export interface IDropdownListItem {
   img?: string;
   icon?: string;
   initials?: string;
+  unread?: boolean;
 }

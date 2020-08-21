@@ -11,5 +11,4 @@ export class HeaderProfileComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

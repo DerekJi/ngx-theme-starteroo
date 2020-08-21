@@ -1,4 +1,4 @@
-<div class="dropdown-menu dropdown-menu-rich dropdown-menu-right">
-  <app-dropdown-arrow position="right"></app-dropdown-arrow>
+<div class="dropdown-menu dropdown-menu-rich dropdown-menu-right" [ngStyle]="styles">
+  <app-dropdown-arrow [position]="arrowPosition"></app-dropdown-arrow>
   <ng-content></ng-content>
 </div>

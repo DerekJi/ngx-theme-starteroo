@@ -9,6 +9,8 @@ import { UiConfigService } from '@core/services/ui-config.service';
 export class HeaderNavContainerComponent implements OnInit {
 
   readonly sheets = this.uiConfigs.getSheets();
+  readonly activities = this.uiConfigs.getActivities();
+  readonly messages = this.uiConfigs.getMessages();
 
   constructor(
     private uiConfigs: UiConfigService,

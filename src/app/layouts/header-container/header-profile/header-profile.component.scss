@@ -1,4 +1,17 @@
 
+.profile-container {
+  button {
+    color: #fff;
+    width: 16rem;
+    outline: 0;
+    background: none;
+    border-left: 1px solid rgba(34,34,48,.12);
+    &:hover {
+      background-color: hsla(0,0%,100%,.12);
+    }
+ }
+}
+
 .user-avatar {
   position: relative;
   margin-bottom: 0;
@@ -8,7 +21,7 @@
   font-size: 2rem;
   vertical-align: middle;
   border-radius: 4rem;
-  margin-right: .75rem;
+  margin: 0 .75rem;
   &.user-avatar-md {
     width: 2.25rem;
     height: 2.25rem;
@@ -29,17 +42,8 @@
   }
 }
 
-.profile-container {
-  color: #fff;
-  background: none;
-  border-left: 1px solid rgba(34,34,48,.12);
-  &:hover {
-    background-color: hsla(0,0%,100%,.12);
-  }
-}
-
 .profile-summary {
-  max-width: 10rem;
+  max-width: 12rem;
 
   margin-right: .75rem;
   display: block;
