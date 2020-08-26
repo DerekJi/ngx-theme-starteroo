@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LayoutsModule } from '@layouts/layouts.module';
 import { HomeModule } from '@pages/home/home.module';
 import { SidebarModule } from '@layouts/sidebar/sidebar.module';
+import { TreeMenuModule } from '@layouts/tree-menu/tree-menu.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SidebarModule } from '@layouts/sidebar/sidebar.module';
     HomeModule,
 
     SidebarModule,
+    TreeMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

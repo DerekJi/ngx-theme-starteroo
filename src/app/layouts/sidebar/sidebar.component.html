@@ -2,15 +2,6 @@
   <nav id="sidebar" #sidebar
     class="{{ options.active ? 'active' : ''}}"
     [ngStyle]="{'margin-left': options.marginLeft }">
-
-    <div>
-      <button (click)="toggleActive()" title="collapse" class="btn btn-primary float-right text-light" type="button">
-        <i class="fa fa-times-circle">&nbsp;</i>
-      </button>
-    </div>
-    <h4 class="text-center mx-2 pt-4">SideBar
-    </h4>
-
     <!-- Menu Content -->
     <ng-content></ng-content>
   </nav>

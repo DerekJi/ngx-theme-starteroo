@@ -1,11 +1,12 @@
 @import 'app/_variables.scss';
+@import 'app/common.scss';
 
 #sidebar {
   position: fixed;
-  top: 0;
+  top: $header-height;
   height: 100vh;
   z-index: 999;
-  background: $app-primary;
+  background: #f6f7f9;
   color: var(--white);
   transition: all 0.3s;
 }
@@ -33,7 +34,7 @@ a[data-toggle="collapse"] {
   background: rgba(0, 0, 0, 0.3);
   /* middle layer, i.e. appears below the sidebar */
   z-index: 998;
-  opacity: 0;
+  opacity: 0.5;
   /* animate the transition */
   transition: all 0.5s ease-in-out;
 }
