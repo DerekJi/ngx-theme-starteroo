@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ITreeMenu } from './models/tree-menu.interface';
-import { ITreeMenuNode } from './models/tree-menu-node.interface';
+import { Observable } from 'rxjs';
+import { ITreeMenuNode } from '@core/models/menu-node.interface';
+import { TreeMenuService } from '@core/services/tree-menu.service';
 
 @Component({
   selector: 'app-tree-menu',
@@ -9,25 +10,31 @@ import { ITreeMenuNode } from './models/tree-menu-node.interface';
 })
 export class TreeMenuComponent implements OnInit {
 
-  @Input() title = '';
-  @Input() id?: string;
-  @Input() nodes: ITreeMenuNode[];
+  @Input() mode = 'side';
 
-  constructor() { }
+  public currentNodeId: number | string;
+
+  get navId(): string { return `nav-${this.mode}`; }
+
+  get menuItems$(): Observable<ITreeMenuNode[]> { return this.menuService.values$; }
+
+  toggleCurrent(item: ITreeMenuNode): void {
+    this.currentNodeId = item.id;
+    console.log(`current: ${this.currentNodeId}`);
+
+  }
+
+  isCurrent(item: ITreeMenuNode): boolean {
+    const cur = this.currentNodeId === item.id;
+    return cur;
+  }
+
+  constructor(
+    private menuService: TreeMenuService,
+  ) { }
 
   ngOnInit(): void {
-  }
-
-  get emptyId(): boolean {
-    const empty = this.id === null || this.id === undefined || this.id === '';
-    console.log(`empty(${this.id}) = ${empty}`);
-    return empty;
-  }
-
-  hasChildren(node: ITreeMenuNode): boolean { return node.nodes && node.nodes.length > 0; }
-  nodeId(node: ITreeMenuNode): string {
-    const id = node.url && this.hasChildren(node) ? node.url.replace('#', '') : '';
-    return id;
+    this.menuService.read();
   }
 
 }

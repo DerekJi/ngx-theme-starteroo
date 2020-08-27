@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TreeMenuComponent } from './tree-menu.component';
-import { TreeMenuNodeComponent } from './tree-menu-node/tree-menu-node.component';
+import { TreeMenuItemComponent } from './tree-menu-item/tree-menu-item.component';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
-  declarations: [TreeMenuComponent, TreeMenuNodeComponent],
+  declarations: [TreeMenuComponent, TreeMenuItemComponent],
   exports: [TreeMenuComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
   ]
 })
 export class TreeMenuModule { }

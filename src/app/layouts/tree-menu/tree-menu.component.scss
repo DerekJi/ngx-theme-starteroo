@@ -1,7 +1,18 @@
-// .tm-node {
-//   padding-left: 4px;
-// }
+@import 'app/_variables';
+@import 'app/_mixins';
+
+ul, li {
+  padding: 8px;
+}
 
 li {
-  width: 100%;
+  height: 28px;
+}
+
+
+.menu-glyph[aria-expanded="true"] i {
+  @include rotate-180deg;
+}
+.height-animation {
+  @include height-animation;
 }
