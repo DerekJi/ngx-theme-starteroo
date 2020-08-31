@@ -1,5 +1,5 @@
 <ng-container *ngIf="item">
-  <a [href]="item.url || 'javascript:void(0)'" [ngClass]="{current: current}" class="d-flex justify-content-between level-{{level}}">
+  <a [href]="item.url || 'javascript:void(0)'" [ngClass]="{current: current}" class="d-flex justify-content-between level-{{level}} item-{{item.id}}">
     <span class="menu-lable w-100" [title]="item.tooltip || item.title"
     role="button"
     data-toggle="collapse"

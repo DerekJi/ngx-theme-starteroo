@@ -2,6 +2,13 @@ import { ITreeMenuNode } from "@core/models/menu-node.interface";
 
 export const TreeMenuConfig: ITreeMenuNode[] = [
   {
+    id: 't00',  // Special ID for Home or Dashboard
+    title: 'Home',
+    tooltip: 'Home',
+    icon: 'fas fa-home',
+    url: '/',
+  },
+  {
     id: 't10',
     title: 'Tasks',
     tooltip: 'Scheduled Tasks',
@@ -56,28 +63,28 @@ export const TreeMenuConfig: ITreeMenuNode[] = [
   },
   {
     id: 't30',
-    title: 'Profile',
-    icon: 'fas fa-cog',
-    url: '#profile',
-  },
-  {
-    id: 't40',
     title: 'Projects',
     icon: 'fas fa-cog',
     children: [
       {
-        id: 't41',
+        id: 't31',
         title: 'List',
         icon: 'far fa-building',
         url: '#admin-themes',
       },
       {
-        id: 't42',
+        id: 't32',
         title: 'Details',
         icon: 'fas fa-cogs',
         url: '#admin-settings',
       },
     ]
-  }
+  },
+  {
+    id: 't40',
+    title: 'Profile',
+    icon: 'fas fa-user-circle',
+    url: '#profile',
+  },
 
 ];

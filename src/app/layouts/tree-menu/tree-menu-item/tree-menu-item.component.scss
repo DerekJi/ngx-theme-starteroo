@@ -10,10 +10,22 @@ a {
   color: #666672cc;
   border-left: 3px solid #f6f7f9;
   padding-left: 6px;
-  &:hover {
-    color: #464652;
-    &.level-0 {
-      border-left: 3px solid #464652cc;
+
+  &.level-0 {
+    color: #315893cc;
+    &:hover {
+      color: #315893;
+      border-left: 3px solid #315893;
     }
   }
+  &:hover {
+    color: #464652;
+  }
+
+  // ONLY FOR HOME or Dashboard (t00 is the special ID)
+  &.item-t00 {
+    color: #112873;
+    font-weight: bold;
+  }
 }
+
