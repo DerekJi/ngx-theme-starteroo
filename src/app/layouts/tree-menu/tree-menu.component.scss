@@ -1,12 +1,17 @@
 @import 'app/_variables';
 @import 'app/_mixins';
 
-ul, li {
-  padding: 8px;
+ul {
+  margin-top: 8px;
+  padding: 0;
 }
 
 li {
-  height: 28px;
+  padding: 0 8px;
+}
+
+li {
+  min-height: 32px;
 }
 
 .menu-glyph[aria-expanded="true"] i {
