@@ -1,5 +1,6 @@
 @import 'app/_variables.scss';
 @import 'app/common.scss';
+@import 'app/thin-scrollbar';
 
 #sidebar {
   position: fixed;
@@ -9,6 +10,7 @@
   background: #f6f7f9;
   color: var(--white);
   transition: all 0.3s;
+  overflow: scroll;
 }
 
 #sidebar.active {
