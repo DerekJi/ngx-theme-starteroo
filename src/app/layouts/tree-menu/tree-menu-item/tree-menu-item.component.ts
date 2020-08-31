@@ -10,6 +10,7 @@ export class TreeMenuItemComponent implements OnInit {
 
   @Input() item: ITreeMenuNode;
   @Input() current = false;
+  @Input() level = 0;
 
   constructor() { }
 

@@ -1,5 +1,5 @@
 <ng-container *ngIf="item">
-  <a [href]="item.url || 'javascript:void(0)'" [ngClass]="{current: current}" class="d-flex justify-content-between">
+  <a [href]="item.url || 'javascript:void(0)'" [ngClass]="{current: current}" class="d-flex justify-content-between level-{{level}}">
     <span class="menu-lable w-100" [title]="item.tooltip || item.title"
     role="button"
     data-toggle="collapse"
@@ -23,7 +23,7 @@
     <ul [attr.id]="item.id" class="height-animation collapse multi-collapse">
       <li *ngFor="let childItem of item.children">
         <!-- <a href="javascript:void(0)"><span class="menu-lable">{{ childItem.title }}</span></a> -->
-        <app-tree-menu-item [item]="childItem"></app-tree-menu-item>
+        <app-tree-menu-item [item]="childItem" [level]="level+1"></app-tree-menu-item>
       </li>
     </ul>
   </ng-container>
