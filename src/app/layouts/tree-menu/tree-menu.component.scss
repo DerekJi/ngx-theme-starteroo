@@ -9,9 +9,12 @@ li {
   height: 28px;
 }
 
-
 .menu-glyph[aria-expanded="true"] i {
-  @include rotate-180deg;
+  @include rotate-deg(90deg);
+  transition: all .5s;
+}
+.menu-glyph[aria-expanded="false"] i {
+  transition: all .5s;
 }
 .height-animation {
   @include height-animation;

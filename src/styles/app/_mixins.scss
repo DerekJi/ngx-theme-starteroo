@@ -6,7 +6,7 @@
   -webkit-transition: height .5s;
 }
 
-@mixin rotate-180deg {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
+@mixin rotate-deg($deg) {
+  transform: rotate($deg);
+  -webkit-transform: rotate($deg);
 }
