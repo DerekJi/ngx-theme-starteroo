@@ -8,6 +8,7 @@ import { LayoutsModule } from '@layouts/layouts.module';
 import { HomeModule } from '@pages/home/home.module';
 import { SidebarModule } from '@layouts/sidebar/sidebar.module';
 import { TreeMenuModule } from '@layouts/tree-menu/tree-menu.module';
+import { FooterContainerModule } from '@layouts/footer-container/footer-container.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { TreeMenuModule } from '@layouts/tree-menu/tree-menu.module';
 
     SidebarModule,
     TreeMenuModule,
+    FooterContainerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

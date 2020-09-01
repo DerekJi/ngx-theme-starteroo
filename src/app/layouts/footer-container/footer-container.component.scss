@@ -1,0 +1,12 @@
+@import 'app/common.scss';
+
+footer {
+  width: 100%;
+  height: $footer-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-body;
+  border-top: 1px solid #9c9c9c;
+}

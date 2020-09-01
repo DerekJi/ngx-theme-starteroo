@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+
+  toggleShowMore() { this.showMore = !this.showMore; }
+
+  showMore = false;
+
   constructor() { }
 
   ngOnInit(): void {

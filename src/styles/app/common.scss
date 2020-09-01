@@ -1,3 +1,4 @@
+@import './variables';
 @import './_media';
 
 /**
@@ -5,12 +6,11 @@
  *  1. keep the bottom if the content is too short
  *  2. scroll together with the main contents if the content is long
  */
-$footer-height: 200px;
-$footer-height-mobile: 315px;
-$header-height: 56px;
+
 
 html, body {
   height: 100%;
+  background-color: $bg-body;
   font-size: 14px;
   font-family: -apple-system,BlinkMacSystemFont,Fira Sans,Helvetica Neue,Apple Color Emoji,sans-serif;
 }
@@ -19,6 +19,7 @@ html, body {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -$footer-height;
+  padding-top: $header-height;
   @include xsmall-screen {
     margin-bottom: -$footer-height-mobile;
   }
