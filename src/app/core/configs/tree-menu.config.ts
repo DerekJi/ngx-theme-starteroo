@@ -80,11 +80,4 @@ export const TreeMenuConfig: ITreeMenuNode[] = [
       },
     ]
   },
-  {
-    id: 't40',
-    title: 'Profile',
-    icon: 'fas fa-user-circle',
-    url: '#profile',
-  },
-
 ];
