@@ -10,7 +10,7 @@ $border: 1px solid rgba(34,34,48,.1);
     height: 2.5rem;
     padding: .5rem;
     color: var(--secondary);
-    background-color: var(--light);
+    background-color: lighten(lightgrey, 10%);
     border-bottom: $border;
   }
 
@@ -75,11 +75,10 @@ $border: 1px solid rgba(34,34,48,.1);
   .ddl-footer {
     height: 3rem;
     color: $app-primary;
-    background-color: var(--light);
+    background-color: lighten(lightgrey, 10%);
     border-top: $border;
     padding: .8rem;
     border-bottom-right-radius: .25rem;
     border-bottom-left-radius: .25rem;
   }
 }
-
